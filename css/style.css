@@ -1,20 +1,57 @@
+/*
+COLORS:
+Dark Gold:#B2880E
+Light Gold:#FFCE43
+Gold:#FFC729
+Dark Blue:#0024B2 
+Blue:#2955FF
+*/
+
+
 body{
     background-color: none;
+    color:#0024B2;
 }
 
 #header {
     width:100%;
-    background-color: beige;
+    background-color: none;
+    min-height: 80px;
 }
 header > h1 {
     margin:0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    transform: translateY(50%) 
 }
 
 #nav {
     width 100%;
-    background-color: aqua;
+    background-color: #0024B2;
+    min-height: 80px;
+    font-family: 'Lato', sans-serif;
+    height: auto;
+}
+#nav > ul {
+    text-align: center;
+    transform: translateY(50%);
+    padding: 0;
+    margin: 0;
 }
 
+#nav > ul > button {
+    min-width: 120px;
+    color:#fff;
+    background-color: #FFC729;
+    border: none;
+    padding: 15px 32px;
+    transition: background-color .25s;
+}
+
+#nav > ul > button:hover {
+    background-color: #B2880E;
+}
 .menu {
     display: flex;
     background-color: #eaf5ff;
@@ -22,19 +59,69 @@ header > h1 {
     list-style-type: none;
     margin:0;
 }
-
-#middle-wrapper {
-    display:flex;
+#middle-wrapper-width {
+      display: flex;
+     font-family: 'lato', sans-serif;
+     max-width: 960px;
+     margin: 0 auto;
 }
 
-#main-content-wrapper {
-    background-color: greenyellow;
+
+#middle-wrapper {
+    display: flex;
+    font-family: 'lato', sans-serif;
+    max-width: 960px;
+    margin: auto;
+}
+.side-by-side {
+    display: flex
+}
+#main-content-wrapper .image-content {
+    text-align: center
     width: 80%;
+    margin-top: 50px;
+}
+
+.image-content > img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+.image-content > h4 {
+    font-family: 'lato', sans-serif;
+    font-weight: 300;
+    color: #FFCE43;
+}
+.img-content > h4 > a {
+    color: #FFCE43;
+}
+
+.img-content > h4 > a:hover {
+    color: #2955FF;
+}
+#main-content-wrapper article {
+    width: 50%;
+    margin-top: 100px;
+}
+#main-content-wrapper article h2 {
+    text-align: center;
+}
+#main-content-wrapper article p {
+    max-width: 300px;
+    margin-top:0 auto;
+}
+#main-content-wrapper article #skills {
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+#main-content-wrapper article #skills {
+   font-weight: 400;
 }
 
 #aside-content-wrapper {
-    background-color: plum;
-    width:20%;
+    background-color: #fff;
+    width:35%;
+    font-family: 'lato',sans-serif;
 }
 
 footer {
